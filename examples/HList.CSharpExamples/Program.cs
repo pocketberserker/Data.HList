@@ -27,8 +27,8 @@ namespace CSharpExamples
                 HCons<double, HCons<string, HCons<int[], HNil>>>,
                 HCons<int, HCons<bool, HCons<double, HCons<string, HCons<int[], HNil>>>>>,
                 HAppend<HCons<int, HCons<bool, HNil>>,
-                HCons<double, HCons<string, HCons<int[], HNil>>>,
-                HCons<int, HCons<bool, HCons<double, HCons<string, HCons<int[], HNil>>>>>>>(two);
+                    HCons<double, HCons<string, HCons<int[], HNil>>>,
+                    HCons<int, HCons<bool, HCons<double, HCons<string, HCons<int[], HNil>>>>>>>(two);
 
             var x = three.Append(a, b);
 
