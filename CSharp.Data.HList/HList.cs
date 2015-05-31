@@ -9,6 +9,7 @@ namespace CSharp.Data
 
         public abstract HCons<E, A> Extend<E>(E e);
         public abstract Apply<Unit, Tuple<E, A>, HCons<E, A>> Extender<E>();
+        public abstract int Length { get; }
     }
 
     public static class HList
@@ -40,17 +41,21 @@ namespace CSharp.Data
         {
             return Apply.Cons<E, HNil>();
         }
+
+        public override int Length { get { return 0; } }
     }
 
     public class HCons<E, L> : HList<HCons<E, L>> where L : HList<L>
     {
         private E e;
         private L l;
+        private int length;
 
         internal HCons(E e, L l)
         {
             this.e = e;
             this.l = l;
+            this.length = l.Length + 1;
         }
 
         public override HCons<X, HCons<E, L>> Extend<X>(X e)
@@ -66,5 +71,7 @@ namespace CSharp.Data
         public E Head { get { return this.e; } }
 
         public L Tail { get { return this.l; } }
+
+        public override int Length { get { return length; } }
     }
 }

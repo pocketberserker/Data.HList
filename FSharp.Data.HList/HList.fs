@@ -15,6 +15,8 @@ module HList =
 
   let inline append (h: #HAppend<_, _, _>) a b = h.Append(a, b)
 
+  let inline length (h: HList<_>) = h.Length
+
 module HAppend =
 
   let define<'T when 'T :> HList<'T>> = HAppend.Append<'T>()
