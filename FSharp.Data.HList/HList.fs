@@ -24,4 +24,4 @@ module HAppend =
 [<AutoOpen>]
 module HListSyntax =
 
-  let (+) e l = HList.cons e l
+  let (+|) e l = HList.cons e l

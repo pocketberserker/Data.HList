@@ -11,7 +11,7 @@ module HListTest =
   }
 
   let ``cons cons tail head`` = test {
-    do! assertEquals 1 (true + (1 + HList.nil) |> HList.tail |> HList.head)
+    do! assertEquals 1 (true +| (1 +| HList.nil) |> HList.tail |> HList.head)
   }
 
   let ``append test`` = test {
