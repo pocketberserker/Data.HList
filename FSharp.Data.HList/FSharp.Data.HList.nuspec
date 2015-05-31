@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <dependencies>
+      <dependency id="FSharp.Core" version="3.1.2.1" />
+      <dependency id="CSharp.Data.HList" version="$version$" />
+    </dependencies>
+    <title>$title$</title>
+    <authors>pocketberserker</authors>
+    <owners>pocketberserker</owners>
+    <licenseUrl>https://github.com/pocketberserker/Data.HList/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/pocketberserker/Data.HList</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Type-safe heterogeneous lists extensions for F#.</description>
+    <tags>f# hlist</tags>
+  </metadata>
+</package>

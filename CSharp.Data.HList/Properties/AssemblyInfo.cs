@@ -6,7 +6,6 @@ using System.Runtime.InteropServices;
 // アセンブリに関連付けられている情報を変更するには、
 // これらの属性値を変更してください。
 [assembly: AssemblyTitle("CSharp.Data.HList")]
-[assembly: AssemblyDescription("")]
 [assembly: AssemblyProduct("CSharp.Data.HList")]
 
 // ComVisible を false に設定すると、その型はこのアセンブリ内で COM コンポーネントから 
