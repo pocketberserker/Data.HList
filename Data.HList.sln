@@ -16,6 +16,10 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FSharp.Data.HList", "FSharp
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FSharp.Data.HList.Tests", "FSharp.Data.HList.Tests\FSharp.Data.HList.Tests.fsproj", "{553D9BEF-3EB8-474C-A1B9-C8CD00F37BB1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HList.CSharpExamples", "examples\HList.CSharpExamples\HList.CSharpExamples.csproj", "{23DD12C0-16AD-47DC-9A8C-C23F0F82AE35}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "examples", "examples", "{CAB0F9CA-5459-4E93-996A-112DD6F97A12}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -34,8 +38,15 @@ Global
 		{553D9BEF-3EB8-474C-A1B9-C8CD00F37BB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{553D9BEF-3EB8-474C-A1B9-C8CD00F37BB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{553D9BEF-3EB8-474C-A1B9-C8CD00F37BB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23DD12C0-16AD-47DC-9A8C-C23F0F82AE35}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23DD12C0-16AD-47DC-9A8C-C23F0F82AE35}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23DD12C0-16AD-47DC-9A8C-C23F0F82AE35}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23DD12C0-16AD-47DC-9A8C-C23F0F82AE35}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{23DD12C0-16AD-47DC-9A8C-C23F0F82AE35} = {CAB0F9CA-5459-4E93-996A-112DD6F97A12}
 	EndGlobalSection
 EndGlobal
