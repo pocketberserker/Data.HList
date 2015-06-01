@@ -27,6 +27,8 @@ module HAppend =
 
 module Apply =
 
+  let id<'A> = Apply.Id<'A>()
+
   let func = { new Apply<_ -> _, _, _> with
     member __.Apply(f, a) = f a }
 
