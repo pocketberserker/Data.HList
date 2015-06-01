@@ -19,6 +19,11 @@ namespace CSharp.Data
 
     public static class HFoldr
     {
+        public static HFoldr<G, V, HNil, V> Hfoldr<G, V>()
+        {
+            return new HFoldr<G, V, HNil, V>((f, v, hnil) => v);
+        }
+
         public static HFoldr<G, V, HCons<E, L>, RR> Hfoldr<G, V, E, L, R, RR, PP, H>(PP p, H h)
             where L : HList<L>
             where  H : HFoldr<G, V, L, R>

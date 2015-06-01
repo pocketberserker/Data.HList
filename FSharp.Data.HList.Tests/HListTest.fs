@@ -39,3 +39,13 @@ module HListTest =
     do! assertEquals 3 (HList.length a)
     do! assertEquals (HList.length a + HList.length b) (HList.length x)
   }
+
+  let ``foldBack test`` = test {
+    let functions = HList.singleton (fun x -> 1 + x) |> HList.cons (fun x -> 2 * x) |> HList.cons String.length
+    let comp1 = Apply.comp
+    let comp0 = Apply.comp
+    let fold0 = HFoldBack.define
+    let fold2 = HFoldBack.foldBack comp1 (HFoldBack.foldBack comp0 (HFoldBack.foldBack comp0 fold0))
+    do! assertEquals 7 (HList.foldBack fold2 () id functions "abc")
+  }
+
