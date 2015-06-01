@@ -61,6 +61,7 @@
     <Content Include="packages.config" />
     <Content Include="app.config" />
     <Compile Include="HListTest.fs" />
+    <Compile Include="HPreTest.fs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="FSharp.Core">

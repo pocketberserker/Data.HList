@@ -49,6 +49,7 @@
     <Compile Include="HAppend.cs" />
     <Compile Include="HFoldr.cs" />
     <Compile Include="HList.cs" />
+    <Compile Include="HPre.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
