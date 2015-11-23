@@ -70,7 +70,7 @@
     </Reference>
     <Reference Include="mscorlib" />
     <Reference Include="Persimmon">
-      <HintPath>..\packages\Persimmon.1.0.0-beta6\lib\net20\Persimmon.dll</HintPath>
+      <HintPath>..\packages\Persimmon.1.0.0\lib\net20\Persimmon.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
