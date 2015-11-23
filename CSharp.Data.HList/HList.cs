@@ -47,11 +47,15 @@ namespace CSharp.Data
 
     public class HCons<E, L> : HList<HCons<E, L>> where L : HList<L>
     {
+        private E e;
+        private L l;
+        private int length;
+
         internal HCons(E e, L l)
         {
-            Head = e;
-            Tail = l;
-            Length = l.Length + 1;
+            this.e = e;
+            this.l = l;
+            length = l.Length + 1;
         }
 
         public override HCons<X, HCons<E, L>> Extend<X>(X e)
@@ -64,10 +68,10 @@ namespace CSharp.Data
             return Apply.Cons<X, HCons<E, L>>();
         }
 
-        public E Head { get; }
+        public E Head { get { return e; } }
 
-        public L Tail { get; }
+        public L Tail { get { return l; } }
 
-        public override int Length { get; }
+        public override int Length { get { return length; } }
     }
 }

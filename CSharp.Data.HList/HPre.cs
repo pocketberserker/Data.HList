@@ -33,7 +33,7 @@
                 Value = v;
             }
 
-            public C Value { get; }
+            public C Value { get; private set; }
 
             public static HAnd<HFalse, HFalse, HFalse> hand(HFalse a, HFalse b)
             {
@@ -66,7 +66,7 @@
                 Value = v;
             }
 
-            public C Value { get; }
+            public C Value { get; private set; }
 
             public static HAnd<HFalse, HFalse, HFalse> hor(HFalse a, HFalse b)
             {
@@ -96,7 +96,7 @@
                 Value = z;
             }
 
-            public Z Value { get; }
+            public Z Value { get; private set; }
 
             public static HCond<HFalse, X, Y, Y> hcond(HFalse t, X x, Y y)
             {
@@ -197,7 +197,7 @@
                 Sum = sum;
             }
 
-            public C Sum { get; }
+            public C Sum { get; private set; }
         }
 
         public static class HAdd
