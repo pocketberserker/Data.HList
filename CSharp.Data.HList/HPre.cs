@@ -34,14 +34,12 @@ namespace CSharp.Data
             where B : HBool
             where C : HBool
         {
-            private C v;
-
             internal HAnd(C v)
             {
-                this.v = v;
+                this.Value = v;
             }
 
-            public C Value { get { return v; } }
+            public C Value { get; private set; }
 
             public static HAnd<HFalse, HFalse, HFalse> hand(HFalse a, HFalse b)
             {
@@ -69,14 +67,12 @@ namespace CSharp.Data
             where B : HBool
             where C : HBool
         {
-            private C v;
-
             internal HOr(C v)
             {
-                this.v = v;
+                this.Value = v;
             }
 
-            public C Value { get { return v; } }
+            public C Value { get; private set; }
 
             public static HAnd<HFalse, HFalse, HFalse> hor(HFalse a, HFalse b)
             {
@@ -101,14 +97,12 @@ namespace CSharp.Data
 
         public sealed class HCond<T, X, Y, Z>
         {
-            private Z z;
-
             public HCond(Z z)
             {
-                this.z = z;
+                this.Value = z;
             }
 
-            public Z Value { get { return z; } }
+            public Z Value { get; private set; }
 
             public static HCond<HFalse, X, Y, Y> hcond(HFalse t, X x, Y y)
             {
@@ -171,14 +165,12 @@ namespace CSharp.Data
 
         public class HEq<X, Y, B> where B : HBool
         {
-            private B v;
-
             internal HEq(B v)
             {
-                this.v = v;
+                this.Value = v;
             }
 
-            public B Value { get { return v; } }
+            public B Value { get; private set; }
 
             public static HEq<HZero, HZero, HTrue> eq(HZero a, HZero b)
             {
@@ -206,14 +198,12 @@ namespace CSharp.Data
 
         public class HAdd<A, B, C> where A : HNat<A> where B : HNat<B> where C : HNat<C>
         {
-            private C sum;
-
             internal HAdd(C sum)
             {
-                this.sum = sum;
+                this.Sum = sum;
             }
 
-            public C Sum { get { return sum; } }
+            public C Sum { get; private set; }
         }
 
         public static class HAdd
