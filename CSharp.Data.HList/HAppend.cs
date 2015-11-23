@@ -8,12 +8,12 @@ namespace CSharp.Data
 
         internal HAppend(Func<A, B, C> f)
         {
-            this.append = f;
+            append = f;
         }
 
         public C Append(A a, B b)
         {
-            return this.append(a, b);
+            return append(a, b);
         }
     }
 

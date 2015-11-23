@@ -8,12 +8,12 @@ namespace CSharp.Data
 
         internal HFoldr(Func<G, V, L, R> f)
         {
-            this.foldRight = f;
+            foldRight = f;
         }
 
         public R FoldRight(G f, V v, L l)
         {
-            return this.foldRight(f, v, l);
+            return foldRight(f, v, l);
         }
     }
 

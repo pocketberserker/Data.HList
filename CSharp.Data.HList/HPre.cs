@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CSharp.Data
+﻿namespace CSharp.Data
 {
     public class HPre
     {
@@ -36,7 +30,7 @@ namespace CSharp.Data
         {
             internal HAnd(C v)
             {
-                this.Value = v;
+                Value = v;
             }
 
             public C Value { get; private set; }
@@ -69,7 +63,7 @@ namespace CSharp.Data
         {
             internal HOr(C v)
             {
-                this.Value = v;
+                Value = v;
             }
 
             public C Value { get; private set; }
@@ -99,7 +93,7 @@ namespace CSharp.Data
         {
             public HCond(Z z)
             {
-                this.Value = z;
+                Value = z;
             }
 
             public Z Value { get; private set; }
@@ -167,7 +161,7 @@ namespace CSharp.Data
         {
             internal HEq(B v)
             {
-                this.Value = v;
+                Value = v;
             }
 
             public B Value { get; private set; }
@@ -200,7 +194,7 @@ namespace CSharp.Data
         {
             internal HAdd(C sum)
             {
-                this.Sum = sum;
+                Sum = sum;
             }
 
             public C Sum { get; private set; }
