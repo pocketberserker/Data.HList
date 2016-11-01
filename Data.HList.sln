@@ -1,24 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp.Data.HList", "CSharp.Data.HList\CSharp.Data.HList.csproj", "{819FC4E8-713C-4C5A-96E7-C7B5A603F68D}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{2AFE5686-2D89-410B-9CA7-52E8E86843D2}"
-	ProjectSection(SolutionItems) = preProject
-		.nuget\NuGet.Config = .nuget\NuGet.Config
-		.nuget\NuGet.exe = .nuget\NuGet.exe
-		.nuget\NuGet.targets = .nuget\NuGet.targets
-	EndProjectSection
-EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FSharp.Data.HList", "FSharp.Data.HList\FSharp.Data.HList.fsproj", "{14FBCE09-3B8E-4601-8D10-0CD536528CF3}"
-EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FSharp.Data.HList.Tests", "FSharp.Data.HList.Tests\FSharp.Data.HList.Tests.fsproj", "{553D9BEF-3EB8-474C-A1B9-C8CD00F37BB1}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HList.CSharpExamples", "examples\HList.CSharpExamples\HList.CSharpExamples.csproj", "{23DD12C0-16AD-47DC-9A8C-C23F0F82AE35}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "examples", "examples", "{CAB0F9CA-5459-4E93-996A-112DD6F97A12}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "CSharp.Data.HList", "src\CSharp.Data.HList\CSharp.Data.HList.xproj", "{32190340-9E5A-4A36-84E7-03B097862AA2}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "FSharp.Data.HList", "src\FSharp.Data.HList\FSharp.Data.HList.xproj", "{9158DDBD-4939-4BBE-91BD-E187FD97AE63}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "FSharp.Data.HList.Tests", "test\FSharp.Data.HList.Tests\FSharp.Data.HList.Tests.xproj", "{553D9BEF-3EB8-474C-A1B9-C8CD00F37BB1}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "HList.CSharpExamples", "examples\HList.CSharpExamples\HList.CSharpExamples.xproj", "{23DD12C0-16AD-47DC-9A8C-C23F0F82AE35}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,14 +19,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{819FC4E8-713C-4C5A-96E7-C7B5A603F68D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{819FC4E8-713C-4C5A-96E7-C7B5A603F68D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{819FC4E8-713C-4C5A-96E7-C7B5A603F68D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{819FC4E8-713C-4C5A-96E7-C7B5A603F68D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{14FBCE09-3B8E-4601-8D10-0CD536528CF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{14FBCE09-3B8E-4601-8D10-0CD536528CF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{14FBCE09-3B8E-4601-8D10-0CD536528CF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{14FBCE09-3B8E-4601-8D10-0CD536528CF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32190340-9E5A-4A36-84E7-03B097862AA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32190340-9E5A-4A36-84E7-03B097862AA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32190340-9E5A-4A36-84E7-03B097862AA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32190340-9E5A-4A36-84E7-03B097862AA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9158DDBD-4939-4BBE-91BD-E187FD97AE63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9158DDBD-4939-4BBE-91BD-E187FD97AE63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9158DDBD-4939-4BBE-91BD-E187FD97AE63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9158DDBD-4939-4BBE-91BD-E187FD97AE63}.Release|Any CPU.Build.0 = Release|Any CPU
 		{553D9BEF-3EB8-474C-A1B9-C8CD00F37BB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{553D9BEF-3EB8-474C-A1B9-C8CD00F37BB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{553D9BEF-3EB8-474C-A1B9-C8CD00F37BB1}.Release|Any CPU.ActiveCfg = Release|Any CPU

@@ -1,0 +1,38 @@
+{
+  "version": "0.2.0",
+  "description": "Type-safe heterogeneous lists.",
+  "buildOptions": {
+    "debugType": "portable"
+  },
+  "packOptions": {
+    "requireLicenseAcceptance": false,
+    "tags": [
+      "C#",
+      "hlist"
+    ],
+    "licenseUrl": "https://raw.githubusercontent.com/pocketberserker/Data.HList/master/LICENSE",
+    "projectUrl": "https://github.com/pocketberserker/Data.HList",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/pocketberserker/Data.HList"
+    }
+  },
+  "frameworks": {
+    "net45": {
+      "dependencies": {
+        "FSharp.Core": "3.1.2.5"
+      }
+    },
+    "netstandard1.6": {
+      "dependencies": {
+        "NETStandard.Library": "1.6.0",
+        "FSharp.Core": "4.0.1.7-alpha"
+      }
+    },
+    ".NETPortable,Version=v4.5,Profile=Profile259": {
+      "dependencies": {
+        "FSharp.Core": "3.1.2.5"
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "buildOptions": {
+    "debugType": "portable",
+    "compilerName": "fsc",
+    "compile": {
+      "includeFiles": [
+        "./HListTest.fs",
+        "./HPreTest.fs"
+      ]
+    }
+  },
+  "dependencies": {
+    "CSharp.Data.HList": {
+      "target": "project"
+    },
+    "FSharp.Data.HList": {
+      "target": "project"
+    },
+    "Persimmon": "2.0.1-alpha2"
+  },
+  "tools": {
+    "dotnet-compile-fsc": {
+      "version": "1.0.0-preview2-*",
+      "imports": [
+        "dnxcore50",
+        "portable-net45+win81",
+        "netstandard1.3"
+      ]
+    }
+  },
+  "frameworks": {
+    "net45": {
+      "dependencies": {
+        "FSharp.Core": "3.1.2.5"
+      }
+    }
+  }
+}

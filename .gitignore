@@ -1,5 +1,3 @@
-nuget-packages/
-
 # Created by https://www.gitignore.io
 
 ### VisualStudio ###
@@ -188,3 +186,15 @@ UpgradeLog*.htm
 # Microsoft Fakes
 FakesAssemblies/
 
+packages/
+localpackages/
+paket-files
+*.orig
+.paket/paket.exe
+.fake/
+docs/content/release-notes.md
+temp/
+.nuget/
+docs/files/images
+project.lock.json
+.vs/
