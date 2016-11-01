@@ -13,5 +13,5 @@ clone_depth: 50
 
 test: off
 
-test_script:
-  - cmd: ./build.cmd
+build_script:
+  - cmd: build.cmd
