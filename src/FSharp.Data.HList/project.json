@@ -1,5 +1,5 @@
 {
-  "version": "0.2.0",
+  "version": "0.2.0-alpha",
   "name": "FSharp.Data.HList",
   "description": "Typesafe heterogeneous lists extensions for F#.",
   "buildOptions": {
