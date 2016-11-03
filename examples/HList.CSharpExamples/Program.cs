@@ -6,10 +6,12 @@ namespace CSharpExamples
 {
     class Program
     {
+
         static void Main(string[] args)
         {
-          AppendExample();
-          FoldrExample();
+            AppendExample();
+            FoldrExample();
+            HDictExampe();
         }
 
         static void AppendExample()
@@ -66,6 +68,33 @@ namespace CSharpExamples
           Func<int, int> id = i => i;
 
           Console.WriteLine(fold2.FoldRight(null, id, functions)("abc"));
+        }
+
+        class RelationIS : Relation<int, string>, Relation<string, int> { }
+
+        static void HDictExampe()
+        {
+            var hd =
+                new HDict<RelationIS>()
+                    .Add(1, "foo")
+                    .Add("bar", 1);
+            // compile error!
+            //hd.Add(1, 1);
+            string foo;
+            if(hd.TryGetValue(1, out foo))
+            {
+                Console.WriteLine(foo);
+            }
+            int bar;
+            if(hd.TryGetValue("bar", out bar))
+            {
+                Console.WriteLine(bar);
+            }
+            int buz;
+            if(hd.TryGetValue("buz", out buz) == false)
+            {
+                Console.WriteLine("buz does not found!");
+            }
         }
     }
 }

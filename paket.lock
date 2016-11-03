@@ -16,7 +16,7 @@ NUGET
       Microsoft.Bcl.Build (>= 1.0.14)
     Octokit (0.23)
       Microsoft.Net.Http  - framework: net10, net11, net20, net30, net35, net40, net40-full
-    Persimmon.Console (2.0.1-alpha2)
+    Persimmon.Console (2.0.1-alpha3)
 GITHUB
   remote: fsharp/FAKE
     modules/Octokit/Octokit.fsx (da711ab136889bead398d5ac1a10dc53e60a2c87)

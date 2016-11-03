@@ -16,7 +16,7 @@
     "FSharp.Data.HList": {
       "target": "project"
     },
-    "Persimmon": "2.0.1-alpha2"
+    "Persimmon": "2.0.1-alpha3"
   },
   "tools": {
     "dotnet-compile-fsc": {
@@ -31,7 +31,7 @@
   "frameworks": {
     "net45": {
       "dependencies": {
-        "FSharp.Core": "3.1.2.5"
+        "FSharp.Core": "4.0.0.1"
       }
     }
   }
