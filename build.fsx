@@ -1,5 +1,4 @@
 #r @"packages/build/FAKE/tools/FakeLib.dll"
-#r @"packages/build/FAKE.Persimmon/lib/net451/FAKE.Persimmon.dll"
 open Fake
 open Fake.Git
 open Fake.AssemblyInfoFile
@@ -29,18 +28,12 @@ Target "Clean" (fun _ ->
 Target "Build" (fun _ ->
   DotNetCli.Restore id
 
-  !! "./**/project.json"
-  |> DotNetCli.Build (fun p ->
-    {
-      p with
-        Configuration = "Release"
-    }
-  )
+  DotNetCli.Build (fun p -> { p with Project = "./src/CSharp.Data.HList" })
+  DotNetCli.Build (fun p -> { p with Project = "./src/FSharp.Data.HList" })
 )
 
 Target "RunTests" (fun _ ->
-  !! testAssemblies
-  |> Persimmon id
+  DotNetCli.Test (fun p -> { p with Project = "./test/FSharp.Data.HList.Tests" })
 )
 
 Target "SetVersionInProjectJSON" (fun _ ->
@@ -49,10 +42,15 @@ Target "SetVersionInProjectJSON" (fun _ ->
 )
 
 Target "NuGet" (fun _ ->
-  !! "src/**/project.json"
-  |> DotNetCli.Pack (fun p ->
-    {
-      p with
+  DotNetCli.Pack (fun p ->
+    { p with
+        Project = "./src/CSharp.Data.HList"
+        OutputPath = outDir
+    }
+  )
+  DotNetCli.Pack (fun p ->
+    { p with
+        Project = "./src/FSharp.Data.HList"
         OutputPath = outDir
     }
   )

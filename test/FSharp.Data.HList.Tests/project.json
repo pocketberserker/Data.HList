@@ -16,22 +16,26 @@
     "FSharp.Data.HList": {
       "target": "project"
     },
-    "Persimmon": "2.0.1-alpha3"
+    "Persimmon": "2.0.1-alpha5",
+    "dotnet-test-persimmon": "0.1.0-alpha8"
   },
+  "testRunner": "persimmon",
   "tools": {
     "dotnet-compile-fsc": {
       "version": "1.0.0-preview2-*",
       "imports": [
-        "dnxcore50",
-        "portable-net45+win81",
-        "netstandard1.3"
+        "portable-net45+win81"
       ]
     }
   },
   "frameworks": {
-    "net45": {
+    "netcoreapp1.0": {
       "dependencies": {
-        "FSharp.Core": "4.0.0.1"
+        "Microsoft.NETCore.App": {
+          "version": "1.0.0",
+          "type": "platform"
+        },
+        "FSharp.Core": "4.0.1.7-alpha"
       }
     }
   }

@@ -2,7 +2,5 @@ group Build
   source https://api.nuget.org/v3/index.json
 
   nuget FAKE
-  nuget FAKE.Persimmon
-  nuget Persimmon.Console = 2.0.1-alpha3
 
   github fsharp/FAKE modules/Octokit/Octokit.fsx
