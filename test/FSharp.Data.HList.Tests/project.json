@@ -17,7 +17,7 @@
       "target": "project"
     },
     "Persimmon": "2.0.1-alpha5",
-    "dotnet-test-persimmon": "0.1.0-alpha8"
+    "dotnet-test-persimmon": "1.0.0-beta1"
   },
   "testRunner": "persimmon",
   "tools": {
