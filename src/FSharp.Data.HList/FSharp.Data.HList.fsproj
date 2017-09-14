@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>net45;netstandard1.6</TargetFrameworks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="HList.fs" />
+    <Compile Include="HPre.fs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="../CSharp.Data.HList/CSharp.Data.HList.csproj" />
+  </ItemGroup>
+</Project>

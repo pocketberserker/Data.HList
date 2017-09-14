@@ -5,13 +5,13 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "examples", "examples", "{CAB0F9CA-5459-4E93-996A-112DD6F97A12}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "CSharp.Data.HList", "src\CSharp.Data.HList\CSharp.Data.HList.xproj", "{32190340-9E5A-4A36-84E7-03B097862AA2}"
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "CSharp.Data.HList", "src\CSharp.Data.HList\CSharp.Data.HList.csproj", "{32190340-9E5A-4A36-84E7-03B097862AA2}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "FSharp.Data.HList", "src\FSharp.Data.HList\FSharp.Data.HList.xproj", "{9158DDBD-4939-4BBE-91BD-E187FD97AE63}"
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "FSharp.Data.HList", "src\FSharp.Data.HList\FSharp.Data.HList.fsproj", "{9158DDBD-4939-4BBE-91BD-E187FD97AE63}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "FSharp.Data.HList.Tests", "test\FSharp.Data.HList.Tests\FSharp.Data.HList.Tests.xproj", "{553D9BEF-3EB8-474C-A1B9-C8CD00F37BB1}"
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "FSharp.Data.HList.Tests", "test\FSharp.Data.HList.Tests\FSharp.Data.HList.Tests.fsproj", "{553D9BEF-3EB8-474C-A1B9-C8CD00F37BB1}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "HList.CSharpExamples", "examples\HList.CSharpExamples\HList.CSharpExamples.xproj", "{23DD12C0-16AD-47DC-9A8C-C23F0F82AE35}"
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "HList.CSharpExamples", "examples\HList.CSharpExamples\HList.CSharpExamples.csproj", "{23DD12C0-16AD-47DC-9A8C-C23F0F82AE35}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

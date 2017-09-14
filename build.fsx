@@ -36,11 +36,6 @@ Target "RunTests" (fun _ ->
   DotNetCli.Test (fun p -> { p with Project = "./test/FSharp.Data.HList.Tests" })
 )
 
-Target "SetVersionInProjectJSON" (fun _ ->
-  !! "./src/**/project.json"
-  |> Seq.iter (DotNetCli.SetVersionInProjectJson release.NugetVersion)
-)
-
 Target "NuGet" (fun _ ->
   DotNetCli.Pack (fun p ->
     { p with
@@ -59,7 +54,7 @@ Target "NuGet" (fun _ ->
 Target "PublishNuget" (fun _ ->
   Paket.Push(fun p ->
     { p with
-        WorkingDir = "bin" })
+        WorkingDir = outDir })
 )
 
 #load "paket-files/build/fsharp/FAKE/modules/Octokit/Octokit.fsx"
@@ -85,7 +80,6 @@ Target "BuildPackage" DoNothing
 Target "All" DoNothing
 
 "Clean"
-  ==> "SetVersionInProjectJSON"
   ==> "Build"
   ==> "RunTests"
   ==> "All"

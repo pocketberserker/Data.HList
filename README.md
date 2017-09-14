@@ -1,5 +1,4 @@
-HList for CSharp and FSharp
-===========================
+# HList for CSharp and FSharp
 
 [![License][license-image]][license-url]
 
@@ -7,9 +6,9 @@ A port of [Functional Java](https://github.com/functionaljava/functionaljava)'s 
 
 ## Build status
 
-``master`` branch, Windows Server 2012(Appveyor) [![Build status](https://ci.appveyor.com/api/projects/status/euladv43ilutj8q8/branch/master?svg=true)](https://ci.appveyor.com/project/pocketberserker/data-hlist/branch/master)
+``master`` branch, Appveyor [![Build status](https://ci.appveyor.com/api/projects/status/euladv43ilutj8q8/branch/master?svg=true)](https://ci.appveyor.com/project/pocketberserker/data-hlist/branch/master)
 
-``master`` branch, >= Mono 3.10, OSX(Travis) [![Build Status](https://travis-ci.org/pocketberserker/Data.HList.svg?branch=master)](https://travis-ci.org/pocketberserker/Data.HList)
+``master`` branch, Travis [![Build Status](https://travis-ci.org/pocketberserker/Data.HList.svg?branch=master)](https://travis-ci.org/pocketberserker/Data.HList)
 
 ## NuGet
 

@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="HListTest.fs" />
+    <Compile Include="HPreTest.fs" />
+    <Compile Include="Program.fs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.3.0" />
+    <PackageReference Include="Persimmon" Version="3.1.1" />
+    <PackageReference Include="Persimmon.TestAdapter" Version="0.10.0" />
+    <ProjectReference Include="../../src/FSharp.Data.HList/FSharp.Data.HList.fsproj" />
+  </ItemGroup>
+</Project>
