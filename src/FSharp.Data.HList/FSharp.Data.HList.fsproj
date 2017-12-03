@@ -1,6 +1,14 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
+    <Version>0.2.0</Version>
     <TargetFrameworks>net45;netstandard1.6</TargetFrameworks>
+    <Authors>pocketberserker</Authors>
+    <Owners>pocketberserker</Owners>
+    <PackageProjectUrl>https://github.com/pocketberserker/Data.HList</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/pocketberserker/Data.HList/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <Description>Type-safe heterogeneous lists for F#</Description>
+    <PackageTags>F#;hlist;hdict</PackageTags>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="HList.fs" />
@@ -8,5 +16,6 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="../CSharp.Data.HList/CSharp.Data.HList.csproj" />
+    <PackageReference Include="FSharp.Core" Version="4.1.18" />
   </ItemGroup>
 </Project>

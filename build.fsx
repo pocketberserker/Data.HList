@@ -10,7 +10,7 @@ let project = "Data.HList"
 
 let testAssemblies = "test/**/bin/Release/net45/*Tests*.dll"
 
-let outDir = "bin"
+let outDir = currentDirectory @@ "bin"
 
 let gitOwner = "pocketberserker"
 let gitHome = "https://github.com/" + gitOwner
